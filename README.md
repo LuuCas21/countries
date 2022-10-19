@@ -1,1 +1,1 @@
-# countries
+'Countries' é um projeto simples que fiz para praticar meu conhecimento dos fundamentos do NodeJS. Nele pude pôr em prática a utilização de Routing, uma API simples, a criação de um servidor bem básico e também requests e response feitas no servidor. 
