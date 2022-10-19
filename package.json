@@ -1,0 +1,15 @@
+{
+  "name": "countries",
+  "version": "1.0.0",
+  "description": "Europe Countries",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "author": "Lucas Rosa de Souza",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "http": "^0.0.1-security"
+  }
+}

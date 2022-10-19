@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lucas Rosa de Souza">
+    <meta name="description" content="countries">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Goblin+One&family=Nunito:wght@200&family=Poppins:wght@300&family=Righteous&family=Roboto+Slab&family=Rubik:wght@300&family=Sarala&display=swap" rel="stylesheet">
+    <title>Countries</title>
+    <style>
+
+        * {
+            padding:0;
+            margin:0;
+            font-size:17px;
+            font-family:'Nunito', sans-serif;
+            box-sizing:border-box;
+        }
+
+        body {
+            background:#efefbb;
+        }
+
+        .wrapper {
+            width:100%;
+            height:100vh;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .countries {
+            width:90%;
+            height:auto;
+            padding:5px;
+            display:flex;
+            flex-direction:column;
+        }
+
+        .country {
+            width:60%;
+            height:70px;
+            align-self:center;
+            margin:4px 0;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            background-color:rgba(255, 255, 255, 0.6);
+            transition:all 0.5s ease-in-out;
+        }
+
+        .country:hover {
+            transform:scale(1.05);
+        }
+
+        h1 {
+            font-size:50px;
+            letter-spacing:2px;
+        }
+
+        button {
+            width:14%;
+            height:90%;
+            border:none;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50%;
+            margin-left:5px;
+        }
+
+        span {
+            font-size:30px;
+            letter-spacing:2px;
+        }
+
+        .fa-chevron-right {
+            text-decoration:none;
+            width:10%;
+            height:100%;
+            background-color:rgb(236, 231, 231);
+            font-size:17px;
+            cursor:pointer;
+            text-align:center;
+            line-height:70px;
+            color:black;
+        }
+
+        .fa-long-arrow-right:hover {
+            background:#30a8d7e1;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .country {
+                width:80%;
+            }
+        }
+
+        @media screen and (max-width: 750px) {
+            .country {
+                width:90%;
+            }
+        }
+
+        @media screen and (max-width:635px) {
+            .country {
+                width:100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>🌍 COUNTRIES 🌎</h1>
+        {%COUNTRIES%}
+    </div>
+</body>
+</html>
