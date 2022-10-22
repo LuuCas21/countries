@@ -3,7 +3,7 @@ const chalk = require('chalk');
 const fs = require('fs');
 const url = require('url');
 
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 
 const countries = (countryEl, template) => {
     let output = template.replace(/{%NAME%}/g, countryEl.name);
