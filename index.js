@@ -3,6 +3,8 @@ const chalk = require('chalk');
 const fs = require('fs');
 const url = require('url');
 
+const port = process.env.port || 3000;
+
 const countries = (countryEl, template) => {
     let output = template.replace(/{%NAME%}/g, countryEl.name);
     output = output.replace(/{%FLAG%}/g, countryEl.flag);
@@ -50,6 +52,6 @@ const server = http.createServer((req, res) => {
 
 });
 
-server.listen('8000', '127.0.0.1', () => {
+server.listen(port, '127.0.0.1', () => {
     console.log(chalk.blue('Servidor iniciando...'));
 });
